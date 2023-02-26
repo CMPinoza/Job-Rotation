@@ -1,0 +1,19 @@
+num = int(input("Digite um número inteiro: "))
+
+# Inicializa as variáveis para os dois primeiros valores da sequência
+fib1 = 0
+fib2 = 1
+
+# Percorre a sequência até encontrar um número maior ou igual ao número informado
+while fib2 < num:
+    # Calcula o próximo valor da sequência
+    fib = fib1 + fib2
+    # Atualiza as variáveis para a próxima iteração
+    fib1 = fib2
+    fib2 = fib
+
+# Verifica se o número informado pertence à sequência
+if fib2 == num:
+    print(f"O número {num} pertence à sequência de Fibonacci")
+else:
+    print(f"O número {num} não pertence à sequência de Fibonacci")
